@@ -8,9 +8,29 @@
 
 A browser-based tribute to the classic **Worms World Party** built entirely with vanilla JavaScript and HTML5 Canvas. No frameworks, no build tools, no dependencies — just pure web tech.
 
+## 📫 Stay Updated!
+
+<div align="center">
+<table>
+<tr>
+<td align="center">🚀<br><b>Cutting-edge<br>Updates</b></td>
+<td align="center">💡<br><b>Expert<br>Insights</b></td>
+<td align="center">🎯<br><b>Top 0.1%<br>Content</b></td>
+</tr>
+</table>
+
+[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+
+*Join over 50,000 AI enthusiasts getting unique cutting-edge insights and free tutorials!*
+</div>
+
+[![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+
+## Gameplay
+
 ![Gameplay](gameplay.png)
 
-https://github.com/NirDiamant/worms-world-party/raw/main/demo_video/gameplay.mp4
+https://github.com/NirDiamant/worms-world-party/releases/download/v1.0/gameplay.mp4
 
 ## Play
 
@@ -54,24 +74,6 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 - HTML5 Canvas (5 stacked layers)
 - Web Audio API (synthesized sounds)
 - Zero dependencies
-
-## 📫 Stay Updated!
-
-<div align="center">
-<table>
-<tr>
-<td align="center">🚀<br><b>Cutting-edge<br>Updates</b></td>
-<td align="center">💡<br><b>Expert<br>Insights</b></td>
-<td align="center">🎯<br><b>Top 0.1%<br>Content</b></td>
-</tr>
-</table>
-
-[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
-
-*Join over 50,000 AI enthusiasts getting unique cutting-edge insights and free tutorials!*
-</div>
-
-[![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
 ## Disclaimer
 
