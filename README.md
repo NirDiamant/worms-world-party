@@ -28,9 +28,9 @@ A browser-based tribute to the classic **Worms World Party** built entirely with
 
 ## Gameplay
 
-![Gameplay](gameplay.png)
+[![Gameplay Demo](demo_video/gameplay_preview.gif)](https://github.com/NirDiamant/worms-world-party/releases/download/v1.0/gameplay.mp4)
 
-https://github.com/NirDiamant/worms-world-party/releases/download/v1.0/gameplay.mp4
+*Click the preview above to watch the full 60-second gameplay video*
 
 ## Play
 
