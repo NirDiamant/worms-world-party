@@ -4,6 +4,8 @@ A browser-based tribute to the classic **Worms World Party** built entirely with
 
 ![Gameplay](gameplay.png)
 
+https://github.com/nicenemo/worms-world-party/raw/main/demo_video/gameplay.mp4
+
 ## Play
 
 ```bash
