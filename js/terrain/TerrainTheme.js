@@ -1,0 +1,82 @@
+export const TerrainThemes = {
+    Grassland: {
+        name: 'Grassland',
+        skyTop: '#4488CC',
+        skyBottom: '#AAD4F0',
+        weather: 'rain',
+        terrainColors: [
+            { depth: 0, color: { r: 80, g: 160, b: 20 } },      // Green top
+            { depth: 6, color: { r: 120, g: 80, b: 35 } },       // Brown soil
+            { depth: 40, color: { r: 145, g: 95, b: 50 } },      // Dirt
+            { depth: 120, color: { r: 130, g: 85, b: 45 } },     // Deep dirt
+            { depth: 250, color: { r: 110, g: 105, b: 100 } },   // Rock
+        ],
+        edgeColor: { r: 50, g: 190, b: 30 },
+        edgeHighlight: { r: 100, g: 240, b: 60 },
+        borderDark: { r: 25, g: 18, b: 8 },
+        hasTufts: true,
+        waterColor: 'rgba(30, 100, 200, 0.7)',
+        waterDeep: 'rgba(10, 40, 100, 0.9)',
+        borderColor: { r: 60, g: 130, b: 0 },
+    },
+    Desert: {
+        name: 'Desert',
+        skyTop: '#DD7020',
+        skyBottom: '#FFCC80',
+        weather: 'sand',
+        terrainColors: [
+            { depth: 0, color: { r: 225, g: 195, b: 120 } },
+            { depth: 6, color: { r: 210, g: 175, b: 100 } },
+            { depth: 40, color: { r: 190, g: 150, b: 80 } },
+            { depth: 120, color: { r: 170, g: 130, b: 65 } },
+            { depth: 250, color: { r: 140, g: 110, b: 55 } },
+        ],
+        edgeColor: { r: 240, g: 210, b: 130 },
+        edgeHighlight: { r: 255, g: 235, b: 170 },
+        borderDark: { r: 60, g: 40, b: 15 },
+        hasTufts: false,
+        waterColor: 'rgba(30, 150, 180, 0.7)',
+        waterDeep: 'rgba(10, 80, 100, 0.9)',
+        borderColor: { r: 200, g: 170, b: 90 },
+    },
+    Arctic: {
+        name: 'Arctic',
+        skyTop: '#2A4A7A',
+        skyBottom: '#90B8D8',
+        weather: 'snow',
+        terrainColors: [
+            { depth: 0, color: { r: 245, g: 250, b: 255 } },
+            { depth: 6, color: { r: 225, g: 235, b: 245 } },
+            { depth: 40, color: { r: 190, g: 210, b: 230 } },
+            { depth: 120, color: { r: 150, g: 175, b: 200 } },
+            { depth: 250, color: { r: 110, g: 130, b: 160 } },
+        ],
+        edgeColor: { r: 170, g: 210, b: 240 },
+        edgeHighlight: { r: 200, g: 230, b: 255 },
+        borderDark: { r: 40, g: 55, b: 75 },
+        hasTufts: false,
+        waterColor: 'rgba(70, 140, 190, 0.7)',
+        waterDeep: 'rgba(30, 70, 110, 0.9)',
+        borderColor: { r: 200, g: 220, b: 240 },
+    },
+    Hell: {
+        name: 'Hell',
+        skyTop: '#0C0000',
+        skyBottom: '#3A0808',
+        weather: 'embers',
+        terrainColors: [
+            { depth: 0, color: { r: 130, g: 40, b: 20 } },
+            { depth: 6, color: { r: 95, g: 30, b: 15 } },
+            { depth: 40, color: { r: 75, g: 20, b: 10 } },
+            { depth: 120, color: { r: 55, g: 15, b: 8 } },
+            { depth: 250, color: { r: 40, g: 10, b: 5 } },
+        ],
+        edgeColor: { r: 230, g: 90, b: 20 },
+        edgeHighlight: { r: 255, g: 140, b: 40 },
+        borderDark: { r: 15, g: 5, b: 0 },
+        hasTufts: false,
+        waterColor: 'rgba(200, 60, 0, 0.7)',
+        waterDeep: 'rgba(150, 30, 0, 0.9)',
+        borderColor: { r: 100, g: 30, b: 10 },
+    },
+};

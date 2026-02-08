@@ -1,0 +1,19 @@
+.DS_Store
+*.swp
+*.swo
+*~
+node_modules/
+.env
+
+# Dev test screenshots (keep only gameplay.png and menu.png)
+game-*.png
+game_*.png
+pixel_art_*.png
+sprite-sheet.png
+zoomed.png
+
+# PixelLab handoff doc (dev only)
+PIXELLAB_HANDOFF.md
+
+# Playwright MCP test artifacts
+.playwright-mcp/

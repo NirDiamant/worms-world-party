@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#canvas-background { z-index: 1; }
+#canvas-terrain { z-index: 2; }
+#canvas-entities { z-index: 3; }
+#canvas-effects { z-index: 4; }
+#canvas-ui { z-index: 5; }
+
+#menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-overlay.hidden {
+    display: none;
+    pointer-events: none;
+}
+
+#menu-screen,
+#setup-screen,
+#gameover-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Menu styling */
+.menu-title {
+    font-size: 72px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow:
+        0 0 20px rgba(255, 100, 0, 0.8),
+        0 0 40px rgba(255, 50, 0, 0.6),
+        3px 3px 0 #000;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.menu-subtitle {
+    font-size: 28px;
+    color: #ffa500;
+    text-shadow: 2px 2px 0 #000;
+    margin-bottom: 50px;
+}
+
+.menu-btn {
+    display: block;
+    width: 280px;
+    padding: 15px 30px;
+    margin: 8px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(180deg, #4a7c2e 0%, #2d5016 100%);
+    border: 3px solid #6aaa3a;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.15s ease;
+}
+
+.menu-btn:hover {
+    background: linear-gradient(180deg, #5a9c3e 0%, #3d6026 100%);
+    border-color: #8aca5a;
+    transform: scale(1.05);
+}
+
+.menu-btn:active {
+    transform: scale(0.98);
+}
+
+/* Setup screen */
+.setup-container {
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #4a7c2e;
+    border-radius: 12px;
+    padding: 30px 40px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.setup-title {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.setup-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 12px;
+}
+
+.setup-label {
+    color: #ccc;
+    font-size: 16px;
+    min-width: 120px;
+}
+
+.setup-input,
+.setup-select {
+    padding: 8px 12px;
+    font-size: 15px;
+    background: #1a1a2e;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 6px;
+    outline: none;
+}
+
+.setup-input:focus,
+.setup-select:focus {
+    border-color: #6aaa3a;
+}
+
+.team-config {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 12px 0;
+}
+
+.team-config-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Weapon panel */
+.weapon-panel {
+    position: absolute;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #666;
+    border-radius: 8px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(7, 48px);
+    gap: 4px;
+}
+
+.weapon-panel.hidden {
+    display: none;
+}
+
+.weapon-slot {
+    width: 48px;
+    height: 48px;
+    background: #222;
+    border: 2px solid #444;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 10px;
+    color: #aaa;
+}
+
+.weapon-slot:hover {
+    border-color: #6aaa3a;
+    background: #333;
+}
+
+.weapon-slot.selected {
+    border-color: #ffcc00;
+    background: #443300;
+}
+
+.weapon-slot .ammo {
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    font-size: 9px;
+    color: #ff0;
+}
+
+/* Game over */
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.gameover-title {
+    font-size: 56px;
+    font-weight: 900;
+    color: #ffcc00;
+    text-shadow: 3px 3px 0 #000, 0 0 30px rgba(255, 200, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.gameover-stats {
+    color: #ccc;
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
