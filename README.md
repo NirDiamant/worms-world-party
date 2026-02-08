@@ -1,5 +1,11 @@
 # Worms World Party - Browser Edition
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nir-diamant-759323134/)
+[![Twitter](https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20@NirDiamantAI&style=social)](https://twitter.com/NirDiamantAI)
+[![Reddit](https://img.shields.io/badge/Reddit-Join%20our%20subreddit-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/EducationalAI/)
+[![Discord](https://img.shields.io/badge/Discord-Join%20our%20community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/cA6Aa4uyDX)
+[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/NirDiamant)
+
 A browser-based tribute to the classic **Worms World Party** built entirely with vanilla JavaScript and HTML5 Canvas. No frameworks, no build tools, no dependencies — just pure web tech.
 
 ![Gameplay](gameplay.png)
@@ -9,7 +15,7 @@ https://github.com/NirDiamant/worms-world-party/raw/main/demo_video/gameplay.mp4
 ## Play
 
 ```bash
-git clone https://github.com/nicenemo/worms-world-party.git
+git clone https://github.com/NirDiamant/worms-world-party.git
 cd worms-world-party
 python3 -m http.server 8080
 ```
@@ -48,6 +54,24 @@ Then open [http://localhost:8080](http://localhost:8080) in your browser.
 - HTML5 Canvas (5 stacked layers)
 - Web Audio API (synthesized sounds)
 - Zero dependencies
+
+## 📫 Stay Updated!
+
+<div align="center">
+<table>
+<tr>
+<td align="center">🚀<br><b>Cutting-edge<br>Updates</b></td>
+<td align="center">💡<br><b>Expert<br>Insights</b></td>
+<td align="center">🎯<br><b>Top 0.1%<br>Content</b></td>
+</tr>
+</table>
+
+[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+
+*Join over 50,000 AI enthusiasts getting unique cutting-edge insights and free tutorials!*
+</div>
+
+[![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
 
 ## Disclaimer
 
