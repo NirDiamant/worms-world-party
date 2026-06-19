@@ -17,3 +17,9 @@ PIXELLAB_HANDOFF.md
 
 # Playwright MCP test artifacts
 .playwright-mcp/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+.cache/
